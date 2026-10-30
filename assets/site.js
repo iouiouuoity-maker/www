@@ -1,4 +1,4 @@
-const PAGES=[['Басты бет','index.html'],['Тарих негіздері','history.html'],['Атлас','atlas.html'],['Хронология','chronology.html'],['HAN QUEST','quest.html'],['Зертхана','lab.html'],['Дерекхана','sources.html']];
+const PAGES=[['Басты бет','index.html'],['Тарих негіздері','history.html'],['Атлас','atlas.html'],['Хронология','chronology.html'],['HAN QUEST','quest.html'],['Зертхана','lab.html'],['Дереккөз','sources.html']];
 const current=location.pathname.split('/').pop()||'index.html';
 document.querySelectorAll('[data-nav]').forEach(nav=>{nav.innerHTML=PAGES.map(([label,url])=>`<a href="${url}" class="${url===current?'active':''}">${label}</a>`).join('')});
 document.querySelectorAll('[data-footer]').forEach(f=>f.innerHTML=`<div class="wrap footerrow"><div><b>HAN ATLAS</b> &nbsp;·&nbsp; Қазақстан тарихын цифрлық зерттеу</div><div class="small">КӨРСЕТІЛГЕН НҮКТЕЛЕР БАҒДАРЛЫҚ · ДЕРЕКТІ ТЕКСЕР</div></div>`);
